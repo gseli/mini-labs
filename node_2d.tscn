@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c0gu4n7ijeln1"]
+[gd_scene load_steps=10 format=3 uid="uid://c0gu4n7ijeln1"]
 
 [ext_resource type="Texture2D" uid="uid://b7p2j72u3pva8" path="res://body_outline.png" id="1_ocg2u"]
 [ext_resource type="Script" path="res://body.gd" id="2_1caoj"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://pupilas.gd" id="5_i4wq4"]
 [ext_resource type="Texture2D" uid="uid://cx1xt8lcpu3oj" path="res://boquita.png" id="5_n5b4u"]
 [ext_resource type="Texture2D" uid="uid://b1lb7dt562fci" path="res://cejas.png" id="6_yv542"]
+[ext_resource type="AudioStream" uid="uid://cndftmuy42fqy" path="res://On%CC%83o%20song%20raw.mp3" id="9_ari5c"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -46,4 +47,9 @@ editable = false
 context_menu_enabled = false
 shortcut_keys_enabled = false
 selecting_enabled = false
+middle_mouse_paste_enabled = false
 caret_blink = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_ari5c")
+autoplay = true

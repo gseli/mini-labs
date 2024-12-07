@@ -1,7 +1,7 @@
 extends Node2D  # Asegúrate de que el nodo 'pupilas' sea un Node2D o similar
 
 # Constante para la distancia máxima de movimiento de las pupilas
-const MAX_DISTANCE = 3
+const MAX_DISTANCE = 5
 
 func _process(delta):
 	# Obtener la posición global del ratón
