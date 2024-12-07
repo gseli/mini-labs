@@ -34,3 +34,16 @@ texture = ExtResource("5_n5b4u")
 
 [node name="cejas" type="Sprite2D" parent="body"]
 texture = ExtResource("6_yv542")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 234.0
+offset_top = 202.0
+offset_right = 364.0
+offset_bottom = 240.0
+scale = Vector2(3, 3)
+text = "Hola, ven bien."
+editable = false
+context_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+caret_blink = true
