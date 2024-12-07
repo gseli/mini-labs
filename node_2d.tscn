@@ -36,20 +36,16 @@ texture = ExtResource("5_n5b4u")
 [node name="cejas" type="Sprite2D" parent="body"]
 texture = ExtResource("6_yv542")
 
-[node name="TextEdit" type="TextEdit" parent="."]
-offset_left = 234.0
-offset_top = 202.0
-offset_right = 364.0
-offset_bottom = 240.0
-scale = Vector2(3, 3)
-text = "Hola, ven bien."
-editable = false
-context_menu_enabled = false
-shortcut_keys_enabled = false
-selecting_enabled = false
-middle_mouse_paste_enabled = false
-caret_blink = true
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("9_ari5c")
 autoplay = true
+max_polyphony = 2
+parameters/looping = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 353.0
+offset_top = 260.0
+offset_right = 490.0
+offset_bottom = 294.0
+text = "Hola, Bienvenido."
+fit_content = true
