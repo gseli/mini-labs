@@ -1,0 +1,36 @@
+[gd_scene load_steps=9 format=3 uid="uid://c0gu4n7ijeln1"]
+
+[ext_resource type="Texture2D" uid="uid://b7p2j72u3pva8" path="res://body_outline.png" id="1_ocg2u"]
+[ext_resource type="Script" path="res://body.gd" id="2_1caoj"]
+[ext_resource type="Texture2D" uid="uid://bnqc6gwl0toen" path="res://body_color.png" id="2_f364q"]
+[ext_resource type="Texture2D" uid="uid://q3ycu0hpak1o" path="res://ojos.png" id="3_vbi6k"]
+[ext_resource type="Texture2D" uid="uid://bdvl1usdjw2yr" path="res://pupilas.png" id="4_8f6uo"]
+[ext_resource type="Script" path="res://pupilas.gd" id="5_i4wq4"]
+[ext_resource type="Texture2D" uid="uid://cx1xt8lcpu3oj" path="res://boquita.png" id="5_n5b4u"]
+[ext_resource type="Texture2D" uid="uid://b1lb7dt562fci" path="res://cejas.png" id="6_yv542"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="body" type="Sprite2D" parent="."]
+position = Vector2(418, 446)
+texture = ExtResource("1_ocg2u")
+script = ExtResource("2_1caoj")
+
+[node name="body_color" type="Sprite2D" parent="body"]
+z_index = -1
+texture = ExtResource("2_f364q")
+
+[node name="ojos" type="Sprite2D" parent="body"]
+position = Vector2(-1, -1)
+texture = ExtResource("3_vbi6k")
+
+[node name="pupilas" type="Sprite2D" parent="body/ojos"]
+texture = ExtResource("4_8f6uo")
+script = ExtResource("5_i4wq4")
+
+[node name="boquita" type="Sprite2D" parent="body"]
+position = Vector2(-2, 1)
+texture = ExtResource("5_n5b4u")
+
+[node name="cejas" type="Sprite2D" parent="body"]
+texture = ExtResource("6_yv542")
